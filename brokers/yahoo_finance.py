@@ -2,6 +2,7 @@ import yfinance
 from base import BrokerAPI
 from exceptions import NotSupportedAction
 
+
 class YahooFinanceClient(BrokerAPI):
     """This class is only for data extraction from Yahoo Finance"""
     def get_data(self,ticker, start_date, end_date, time_interval,output_format='csv'):
